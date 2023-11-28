@@ -8,3 +8,9 @@ nav ul li{
     margin:0; 
     background-color: aqua;
 }
+
+body{
+    background-image: url(Images/css_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
