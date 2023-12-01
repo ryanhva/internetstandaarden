@@ -1,7 +1,7 @@
 /*nav bar*/
 nav ul li{
     display: inline;
-    padding: 0 20px;
+    padding: 0 45px;
     text-align: center;
 }    
 .title{
@@ -44,3 +44,4 @@ body {
     max-height: 90vh; 
 }
 
+ 
