@@ -6,7 +6,10 @@
     text-align: center;
     transform: translateX(16%);
   }
-
+h4, h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
   
   
   .menu_logo {
@@ -27,7 +30,11 @@
   
 
 
-
+/*history*/
+.image_container {
+    display: flex;
+    justify-content: space-evenly; /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
+}
 
 /*backgrounbd + info*/
 body {
@@ -74,8 +81,8 @@ body {
 
   /*test*/
   .nav_bar {
-    background-color: #046684
-    ;
+    background-color: #046684;
+    border-radius: 4px;
   }
   
 
