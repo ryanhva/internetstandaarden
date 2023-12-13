@@ -28,57 +28,6 @@ h4, h2 {
       position: relative;
   }
   
-
-
-/*history*/
-.image_container {
-    display: flex;
-    justify-content: space-evenly; /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
-}
-
-/*backgrounbd + info*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('Images/studio_ghiblie_landscape.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    background-color: rgba(255, 255, 255, 0.8);
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-y: auto; 
-    max-height: 90vh; 
-}
-
-.content_list {
-    background-color: rgba(255, 255, 255, 0.8); 
-    width: 800px;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-y: auto; 
-    max-height: 90vh; 
-}
-
-
-  .two-column-list li{
-    float: left; 
-    width: 50%;
-  }
-
-
-
-
   /*test*/
   .nav_bar {
     background-color: #046684;
@@ -133,3 +82,94 @@ body {
   button:hover {
     background-color: #45a049;
   }
+
+
+/*history pictures*/
+.image_container {
+    display: flex;
+    justify-content: space-evenly; /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
+}
+
+/*backgrounbd + info*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Images/studio_ghiblie_landscape.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto; 
+    max-height: 90vh; 
+}
+
+.content_list {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto; 
+    max-height: 90vh; 
+}
+
+
+  .two-column-list li{
+    float: left; 
+    width: 50%;
+  }
+
+/*director picutres*/
+.info_hayao, .info_isao, .info_toshio{
+  line-height:0 ;
+}
+.flip_box {
+    float: right;
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
+}
+
+.flip_box_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip_box:hover .flip_box_inner {
+  transform: rotateY(180deg);
+}
+
+.flip_box_front, .flip_box_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip_box_front{
+  background-color: #bbb;
+  color: black;
+}
+
+.flip_box_back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
