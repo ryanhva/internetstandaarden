@@ -1,171 +1,178 @@
+/*header*/
+.title {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateX(16%);
+}
 
-  /*header*/
-  .title{
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    transform: translateX(16%);
-  }
+.menu_logo {
+  margin-left: auto;
+  max-height: 200px;
+  max-width: 200px;
+  transform: translateX(5%);
+}
 
-  .menu_logo {
-      margin-left : auto;
-      max-height: 200px;
-      max-width: 200px;
-      transform: translateX(5%);
-    }
-  
-  .title_logo {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      display: flex;
-      justify-content:space-between;
-      align-items: center;
-      position: relative;
-  }
-  
-  /*nav bar*/
-  .nav_bar {
-    background-color: #046684;
-    border-radius: 4px;
-    position: relative;
-  }
+.title_logo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
-  .flying_totoro {
-    position: absolute;
-    top: 1em;
-  }
-  
-  .flying_totoro2 {
-    position: absolute;
-    top: 1em;
-    left: 6em;
-  }
+/*nav bar*/
+.nav_bar {
+  background-color: #046684;
+  border-radius: 4px;
+  position: relative;
+}
 
-  .flying_totoro3 {
-    position: absolute;
-    top: 1em;
-    left: 15em;
-  }
+.flying_totoro {
+  position: absolute;
+  top: 1em;
+}
 
-  .flying_totoro4 {
-    position: absolute;
-    top: 1em;
-    left: 24em;
-  }
+.flying_totoro2 {
+  position: absolute;
+  top: 1em;
+  left: 6em;
+}
 
-  .nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .nav_menu li {
-    float: left;
-  }
-  
-  .nav_menu a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav_menu a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .search-bar {
-    float: right;
-    padding: 10px;
-  }
-  
-  input {
-    padding: 8px;
-    border: none;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    background-color: #2e4744;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+.flying_totoro3 {
+  position: absolute;
+  top: 1em;
+  left: 15em;
+}
+
+.flying_totoro4 {
+  position: absolute;
+  top: 1em;
+  left: 24em;
+}
+
+.nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav_menu li {
+  float: left;
+}
+
+.nav_menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.search-bar {
+  float: right;
+  padding: 10px;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #2e4744;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
 
 
 /*history pictures*/
 .image_container {
-    display: flex;
-    justify-content: space-evenly; /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
+  display: flex;
+  justify-content: space-evenly;
+  /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
 }
 
 /*backgrounbd + info*/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('Images/studio_ghiblie_landscape.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('Images/studio_ghiblie_landscape.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- h2, h3, .info_hayao_tekst, .info_isao_tekst {
+h2,
+h3,
+.info_hayao_tekst,
+.info_isao_tekst {
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
 }
 
 .content {
   position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
-    max-width: 800px;
-    padding: 20px;
-    padding-top: 40px;
-    border-radius: 10px;
-    overflow-y: auto; 
-    max-height: 90vh; 
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 .content_list {
-    background-color: rgba(255, 255, 255, 0.8); 
-    width: 800px;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-y: auto; 
-    max-height: 90vh; 
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 
-  .two-column-list li{
-    float: left; 
-    width: 50%;
-  }
+.two-column-list li {
+  float: left;
+  width: 50%;
+}
 
 /*director picutres*/
-.info_hayao, .info_isao, .info_toshio{
-  line-height:0 ;
+.info_hayao,
+.info_isao,
+.info_toshio {
+  line-height: 0;
 }
+
 .flip_box {
   margin-left: 1em;
-    float: right;
-    background-color: transparent;
-    width: 400px;
-    height: 400px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
+  float: right;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 }
 
 .flip_box_inner {
@@ -181,14 +188,15 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip_box_front, .flip_box_back {
+.flip_box_front,
+.flip_box_back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.flip_box_front{
+.flip_box_front {
   background-color: #bbb;
   color: black;
 }
@@ -198,4 +206,3 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
-
