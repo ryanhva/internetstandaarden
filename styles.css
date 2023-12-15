@@ -7,20 +7,17 @@
 }
 
 .menu_logo {
-  margin-left: auto;
   max-height: 200px;
   max-width: 200px;
   transform: translateX(5%);
 }
 
 .title_logo {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; /*aligns items between eacht other*/
   position: relative; 
 }
+
 
 /*nav bar*/
 .nav_bar {
@@ -53,22 +50,22 @@
 }
 
 .nav_menu ul {
-  list-style-type: none;
+  list-style-type: none; /*removest list markers*/
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; /* hides anying that overflows the box*/
 }
 
 .nav_menu li {
-  float: left;
+  float: left; /* makes the content float left*/
 }
 
 .nav_menu a {
-  display: block;
+  display: block; /*element is displayed as a block */
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none;/* removes text decoraton*/
 }
 
 .nav_menu a:hover {
@@ -108,7 +105,7 @@ button:hover {
   /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
 }
 
-/*backgrounbd + info*/
+/*background + info*/
 body {
   margin: 0;
   padding: 0;
@@ -158,7 +155,7 @@ h3,
   width: 50%;
 }
 
-/*director picutres*/
+/*flip cards*/
 .info_hayao,
 .info_isao,
 .info_toshio {
@@ -207,6 +204,7 @@ h3,
   transform: rotateY(180deg);
 }
 
+/*footer*/
 .footer {
   font-size: x-small;
 }
