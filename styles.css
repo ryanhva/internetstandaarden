@@ -1,14 +1,15 @@
-/*header*/
+/*title + logo*/
 .title {
   margin: 0;
   width: 100%;
   text-align: center;
-  transform: translateX(16%); /*move picture horizontaly*/
+  transform: translateX(16%); 
 }
 
 .menu_logo {
   max-height: 200px;
   max-width: 200px;
+  display: flex;
   transform: translateX(5%);
 }
 
@@ -19,53 +20,31 @@
 }
 
 
-/*nav bar*/
+/*nav bar */ 
+/* code source https://www.w3schools.com/howto/howto_css_searchbar.asp and classmades*/
 .nav_bar {
   background-color: #046684;
   border-radius: 4px;
   position: relative;
 }
 
-.flying_totoro {
-  position: absolute;
-  top: 1em;
-}
-
-.flying_totoro2 {
-  position: absolute;
-  top: 1em;
-  left: 6em;
-}
-
-.flying_totoro3 {
-  position: absolute;
-  top: 1em;
-  left: 15em;
-}
-
-.flying_totoro4 {
-  position: absolute;
-  top: 1em;
-  left: 24em;
-}
-
 .nav_menu ul {
-  list-style-type: none; /*removest list markers*/
+  list-style-type: none; 
   margin: 0;
   padding: 0;
-  overflow: hidden; /* hides anying that overflows the box*/
+  overflow: hidden; 
 }
 
 .nav_menu li {
-  float: left; /* makes the content float left*/
+  float: left; 
 }
 
 .nav_menu a {
-  display: block; /*element is displayed as a block */
+  display: block; 
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;/* removes text decoraton*/
+  padding: 20px 16px;
+  text-decoration: none;
 }
 
 .nav_menu a:hover {
@@ -75,7 +54,7 @@
 
 .search-bar {
   float: right;
-  padding: 10px;
+  padding: 14px;
 }
 
 input {
@@ -97,15 +76,34 @@ button:hover {
   background-color: #45a049;
 }
 
-
-/*history pictures*/
-.image_container {
-  display: flex;
-  justify-content: space-evenly;
-  /* Adjust as needed: space-around, space-evenly, flex-start, flex-end, etc. */
+/*totoro gif*/
+.flying_totoro {
+  position: absolute;
+  top: -0.5em;
 }
 
-/*background + info*/
+.flying_totoro2 {
+  position: absolute;
+  top: -0.5em;
+  left: 6em;
+}
+
+.flying_totoro3 {
+  position: absolute;
+  top: -0.5em;
+  left: 15em;
+}
+
+.flying_totoro4 {
+  position: absolute;
+  top: -0.5em;
+  left: 24em;
+}
+
+
+
+/*background + page style*/
+/* code source chatgpt*/
 body {
   margin: 0;
   padding: 0;
@@ -121,6 +119,25 @@ body {
   align-items: center;
 }
 
+
+.content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  padding: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/*history*/
+.image_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* directors and producers*/
 h2,
 h3,
 .info_hayao_tekst,
@@ -129,33 +146,8 @@ h3,
   border-bottom: 1px solid #000;
 }
 
-.content {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 800px;
-  padding: 20px;
-  padding-top: 40px;
-  border-radius: 10px;
-  overflow-y: auto;
-  max-height: 90vh;
-}
-
-.content_list {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 800px;
-  padding: 20px;
-  border-radius: 10px;
-  overflow-y: auto;
-  max-height: 90vh;
-}
-
-
-.two-column-list li {
-  float: left;
-  width: 50%;
-}
-
 /*flip cards*/
+/*code source flip cards https://www.w3schools.com/howto/howto_css_flip_image.asp*/
 .info_hayao,
 .info_isao,
 .info_toshio {
@@ -164,12 +156,12 @@ h3,
 
 .flip_box {
   margin-left: 1em;
+  margin-bottom: 1em;
   float: right;
   background-color: transparent;
   width: 400px;
   height: 400px;
   perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
 }
 
 .flip_box_inner {
@@ -193,15 +185,19 @@ h3,
   backface-visibility: hidden;
 }
 
-.flip_box_front {
-  background-color: #bbb;
-  color: black;
-}
+
 
 .flip_box_back {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+/*movie list*/
+/*source teacher*/
+.two-column-list li {
+  float: left;
+  width: 50%;
 }
 
 /*footer*/
