@@ -131,6 +131,10 @@ body {
   max-height: 90vh;
 }
 
+img {
+  display: flex;
+}
+
 /*history*/
 .image_container {
   display: flex;
